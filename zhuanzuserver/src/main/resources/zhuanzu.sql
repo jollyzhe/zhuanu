@@ -21,9 +21,9 @@ CREATE TABLE `user` (
   `phone` varchar(11) DEFAULT NULL COMMENT '电话',
   `address` varchar(255) DEFAULT NULL COMMENT '地址',
   `is_del` int(1) DEFAULT 0 COMMENT '是否删除 0为未删除 1为删除',
-  `create_name` int(11) DEFAULT NULL COMMENT '创建人',
+  `create_id` int(11) DEFAULT NULL COMMENT '创建人id',
   `create_time` Date DEFAULT NULL COMMENT '创建日期',
-  `modified_user` int(11) DEFAULT NULL COMMENT '修改人',
+  `modified_id` int(11) DEFAULT NULL COMMENT '修改人id',
   `modified_time` Date DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8  COMMENT='用户表';
@@ -38,9 +38,9 @@ CREATE TABLE `province` (
   `code` varchar(64) DEFAULT NULL COMMENT '省份code',
   `name` varchar(64) DEFAULT NULL COMMENT '省份名称',
   `is_del` int(1) DEFAULT 0 COMMENT '是否删除 0为未删除 1为删除',
-  `create_name` int(11) DEFAULT NULL COMMENT '创建人',
+ `create_id` int(11) DEFAULT NULL COMMENT '创建人id',
   `create_time` Date DEFAULT NULL COMMENT '创建日期',
-  `modified_user` int(11) DEFAULT NULL COMMENT '修改人',
+  `modified_id` int(11) DEFAULT NULL COMMENT '修改人id',
   `modified_time` Date DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COMMENT='省份表';
@@ -57,9 +57,9 @@ CREATE TABLE `city` (
   `code` varchar(64) DEFAULT NULL COMMENT '城市code',
   `name` varchar(64) DEFAULT NULL COMMENT '城市名称',
   `is_del` int(1) DEFAULT 0 COMMENT '是否删除 0为未删除 1为删除',
-  `create_name` int(11) DEFAULT NULL COMMENT '创建人',
+  `create_id` int(11) DEFAULT NULL COMMENT '创建人id',
   `create_time` Date DEFAULT NULL COMMENT '创建日期',
-  `modified_user` int(11) DEFAULT NULL COMMENT '修改人',
+  `modified_id` int(11) DEFAULT NULL COMMENT '修改人id',
   `modified_time` Date DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8  COMMENT='城市表';

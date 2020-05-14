@@ -57,7 +57,7 @@ public class User implements Serializable {
     /**
      * 创建人
      */
-    private Integer createName;
+    private Integer createId;
 
     /**
      * 创建日期
@@ -67,7 +67,7 @@ public class User implements Serializable {
     /**
      * 修改人
      */
-    private Integer modifiedUser;
+    private Integer modifiedId;
 
     /**
      * 修改时间
@@ -142,12 +142,12 @@ public class User implements Serializable {
         this.isDel = isDel;
     }
 
-    public Integer getCreateName() {
-        return createName;
+    public Integer getCreateId() {
+        return createId;
     }
 
-    public void setCreateName(Integer createName) {
-        this.createName = createName;
+    public void setCreateId(Integer createId) {
+        this.createId = createId;
     }
 
     public Date getCreateTime() {
@@ -158,12 +158,13 @@ public class User implements Serializable {
         this.createTime = createTime;
     }
 
-    public Integer getModifiedUser() {
-        return modifiedUser;
+
+    public Integer getModifiedId() {
+        return modifiedId;
     }
 
-    public void setModifiedUser(Integer modifiedUser) {
-        this.modifiedUser = modifiedUser;
+    public void setModifiedId(Integer modifiedId) {
+        this.modifiedId = modifiedId;
     }
 
     public Date getModifiedTime() {
